@@ -1,38 +1,128 @@
 .App {
+  font-family: sans-serif;
   text-align: center;
+  margin: 75px auto;
+  height: 100%;
+  background-repeat: no-repeat;
+  background: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.WeatherContainer {
+  border: 1px solid white;
+  max-width: 700px;
+  margin: 0 auto;
+  border-radius: 30px;
+  background: linear-gradient(220deg, #fdfbfb 0%, #f6e5e5 100%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.searchform {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 35px 30px;
+  font-family: "Roboto", sans-serif;
+}
+.searchbox {
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.726);
+  border: none;
+  border-radius: 6px;
+  color: rgba(116, 116, 120, 0.4);
+  display: inline-block;
+  font-size: 16px;
+  height: 50px;
+  line-height: 20px;
+  padding: 15px 20px;
+  transition: all 150ms ease-in-out;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.searchbutton {
+  background: white;
+  color: black;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  height: 50px;
+  padding: 0px 0;
+  max-width: 200px;
+  transition: all 150ms ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+.searchbutton:hover {
+  background-color: #b6b5b5;
+  color: black;
+}
+.col-button {
+  padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  font-family: "Roboto", sans-serif;
+}
+
+.weather-overview {
+  padding: 0;
+  text-align: center;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+.current-date-time {
+  font-size: 12px;
+  text-align: start;
+  color: black;
+}
+
+.last-updated {
+  color: rgb(71, 70, 70);
+  font-size: 12px;
+}
+
+.weather-description {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.weather-information {
+  font-size: 12px;
+}
+
+.current-temperature {
+  border: 1px solid;
+  margin: 40px auto;
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  background: white;
+}
+
+.current-degrees {
+  font-size: 100px;
+  font-weight: 600;
+  line-height: 1.8;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.weather-forecast {
+  margin: 40px 30px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.726);
+  font-family: "Roboto", sans-serif;
+}
+
+footer {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 12px;
+  padding-top: 15px;
 }
